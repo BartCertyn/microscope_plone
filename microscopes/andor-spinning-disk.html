@@ -1,123 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Andor Spining Disk</title>
-        <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <link rel="stylesheet" href="../css/style.css" type="text/css">
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.html">Cell Imaging Core</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="../index.html">Home</a></li>
-                </ul>
-            </div>
-        </nav>
+<head>
+    <title>Andor Spining Disk</title>
+    <link rel="stylesheet" href="../bootstrap.min.css" type="text/css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <a class="navbar-brand" href="index.html">Cell Imaging Core</a>
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
 
 
-        <div class="container">
-            <div class="page-header">
-                <h1>Fast Imaging Platform</h1>
-                <small></small>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <img src="../img/andor-spinning-disk.jpg" alt="andor spinning disk">
-            </div>
-            
-            <br style="cl: both">
-
-            <div class="row">
-                <h2>Information</h2>
-                <p>
-                    This equipment was funded by a Hercules grant to P. Vanden Berghe (promoter)
-                    T. Voets (co-promoter) and M. Ameloot (co-promoter, UHasselt).
-                    For more information and training please contact multiphoton@med.kuleuven.be.
-
-                </p>
-                <p>The fast imaging platform consist of 2 parts:</p>
-
-                <!-- hardcare -->
-                <h2>Description of the hardware</h2>
-
-                <h3>Part 1: spinning disk confocal system (ANDOR revolution)</h3>
-                <h4>a. Yokogawa CSU-X1 Spinning Disk Unit, 5000 rpm spinning disk</h4>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>Andor Technology iXon3 DU-897-BV monochrome EMCCD camera. Using EEV CCD97 back-illuminated sensor with peak QE 92%.</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>512x512 16 micron square pixels,  16bit digitisation,  read out speeds 10, 5 and 1 MHz. </li>
-                </ul>
-
-                <h4>b. REVOLUTION 500 series AOTF Laser modulator</h4>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>Laser Module for use with LC 400 to 500 series.</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>Diode laser CW - 405nm, 100 mW, HP410LP dichroic mirror.</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>DPSS CW - 488nm, 50 mW, HP495LP dichroic mirror. </li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>DPSS CW - 561nm, 50 mW, HP580LP dichroic mirror. </li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>640 nm, 100mW laser (from January 2014 onwards).</li>
-                </ul>
-
-                <h4>c. Nikon TiE inverted motorized microscope</h4>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>lenses:  20x (NA 0.8, air), 40x (LWD, NA 1.1, WI), 60x (NA1.27, WI)</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>The use of the 40x lens needs to be specified in the booking system !</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>Piezo Z Stage Control for Fast 4D Imaging - 100 um TRAVEL, up to 60 optical sections per sec.  </li>
-                </ul>
-
-                <h4>d. Andor Imaging Workstation</h4>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>Andor iQ-CORE-FST 2.9. </li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>4GB RAM and 2x 1 TB (2TB RAID-0) + 500GB 7,200RPM</li>
-                </ul>
-
-                <h4>e. Heating and CO2 controlled incubator</h4>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>Okolabs </li>
-                </ul>
-
-                <h3>Part 2: a CMOS camera (Photron, Focuscope)</h3>
-                <h4>a. mounted on an Zeiss Examiner or on Nikon TiE</h4>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right" style="margin-right:10px;"></span>This CMOS camera is capable of recording images at 2 kHz and is therefore ideal to monitor action potential related events, diffusion of fluorescent molecules etc...</li>
-                </ul>
-
-                <!-- end of hardware -->
-                <h2>Charges</h2>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <td>Description</td>
-                            <td>Price/h (€)</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>between 08.00 AM and 22.00 PM</td>
-                            <td>25</td>
-                        </tr>
-                        <tr>
-                            <td>Overnight experiment (22.00 PM - 08.00 AM)</td>
-                            <td>175 (whole night)</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-                <p>Person responsible: <a href="https://www.kuleuven.be/wieiswie/nl/person/00050417" target="new">Werend Boesmans</a></p>
-
-                <h2>Make a booking</h2>
-                <p>Please click on the button below to be redirected to the booking application.</p>
-                <a role="button" class="btn btn-info">Place a booking</a>
-                <div style="padding-bottom: 10em;"></div>
-
-            </div>
+    <div class="container">
+        <div class="page-header">
+            <h1>Fast Imaging Platform</h1>
+            <small></small>
         </div>
-    </body>
+
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <img src="../img/andor-spinning-disk.jpg" alt="andor spinning disk">
+        </div>
+
+        <br style="cl: both">
+
+        <h2>Information</h2>
+        <br>
+        <p>
+            This equipment was funded by a Hercules grant to P. Vanden Berghe (promoter) T. Voets (co-promoter) and M. Ameloot (co-promoter, UHasselt). For more information and training please contact multiphoton@med.kuleuven.be.
+
+        </p>
+        <p>The fast imaging platform consist of 2 parts:</p>
+
+        <!-- hardcare -->
+        <br>
+        <h2>Description of the hardware</h2>
+        <br>
+
+        <h3>Part 1: spinning disk confocal system (ANDOR revolution)</h3>
+        <br>
+        <h4>a. Yokogawa CSU-X1 Spinning Disk Unit, 5000 rpm spinning disk</h4>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Andor Technology iXon3 DU-897-BV monochrome EMCCD camera. Using EEV CCD97 back-illuminated sensor with peak QE 92%.</li>
+            <li class="list-group-item">512x512 16 micron square pixels, 16bit digitisation, read out speeds 10, 5 and 1 MHz. </li>
+        </ul>
+<br>
+        <h4>b. REVOLUTION 500 series AOTF Laser modulator</h4>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Laser Module for use with LC 400 to 500 series.</li>
+            <li class="list-group-item">Diode laser CW - 405nm, 100 mW, HP410LP dichroic mirror.</li>
+            <li class="list-group-item">DPSS CW - 488nm, 50 mW, HP495LP dichroic mirror. </li>
+            <li class="list-group-item">DPSS CW - 561nm, 50 mW, HP580LP dichroic mirror. </li>
+            <li class="list-group-item">640 nm, 100mW laser (from January 2014 onwards).</li>
+        </ul>
+<br>
+        <h4>c. Nikon TiE inverted motorized microscope</h4>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">lenses: 20x (NA 0.8, air), 40x (LWD, NA 1.1, WI), 60x (NA1.27, WI)</li>
+            <li class="list-group-item">The use of the 40x lens needs to be specified in the booking system !</li>
+            <li class="list-group-item">Piezo Z Stage Control for Fast 4D Imaging - 100 um TRAVEL, up to 60 optical sections per sec. </li>
+        </ul>
+<br>
+        <h4>d. Andor Imaging Workstation</h4>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Andor iQ-CORE-FST 2.9. </li>
+            <li class="list-group-item">4GB RAM and 2x 1 TB (2TB RAID-0) + 500GB 7,200RPM</li>
+        </ul>
+<br>
+        <h4>e. Heating and CO2 controlled incubator</h4>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Okolabs </li>
+        </ul>
+<br>
+        <h3>Part 2: a CMOS camera (Photron, Focuscope)</h3>
+        <br>
+        <h4>a. mounted on an Zeiss Examiner or on Nikon TiE</h4>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">This CMOS camera is capable of recording images at 2 kHz and is therefore ideal to monitor action potential related events, diffusion of fluorescent molecules etc...</li>
+        </ul>
+<br>
+       <br>
+        <!-- end of hardware -->
+        <h2>Charges</h2>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Description</td>
+                    <td>Price/h (€)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>between 08.00 AM and 22.00 PM</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Overnight experiment (22.00 PM - 08.00 AM)</td>
+                    <td>175 (whole night)</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <p>Person responsible: <a href="https://www.kuleuven.be/wieiswie/nl/person/00050417" target="new">Werend Boesmans</a></p>
+<br>
+       <br>
+        <h2>Make a booking</h2>
+        <br>
+        <p>Please click on the button below to be redirected to the booking application.</p>
+        <button role="button" class="btn btn-primary">Place a booking</button>
+        <div style="padding-bottom: 10em;"></div>
+
+    </div>
+</body>
 
 </html>

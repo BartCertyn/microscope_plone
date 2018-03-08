@@ -1,161 +1,172 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>LSM 780</title>
-        <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <link rel="stylesheet" href="../css/style.css" type="text/css">
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.html">Cell Imaging Core</a>
-                </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="../index.html">Home</a></li>
-                </ul>
+<head>
+    <title>LSM 780</title>
+    <link rel="stylesheet" href="../bootstrap.min.css" type="text/css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="../css/style.css" type="text/css">-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <a class="navbar-brand" href="index.html">Cell Imaging Core</a>
+        <ul class="navbar-nav">
+            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>LSM 780 - NLO Confocal Microscope</h1>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-inverse card-primary">
+                <div class="card-header">Updates</div>
             </div>
-        </nav>
-
-
-        <div class="container">
-            <div class="page-header">
-                <h1>LSM 780 - NLO Confocal Microscope</h1>
-            </div>
-
-            <div class="panel-group">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">Updates</div>
-                    <div class="panel-body">
-                        <ul>
-                            <li>November 6th: Mai Tai DS laser fully functional and aligned. </li>
-                            <li>October 27th: Xcite lamp repaired.</li>
-                            <li>October 3rd-15th 2017: Mai Tai DS laser disconnected and shipped for repair. All single photon work is still possible.</li>
-                            <li>June: due to a power outage, Mai Tai DS is unreliable in starting up and maintaining constant power.</li>
-                            <li>May 5th 2017: System fully operational, Mai Tai DS included.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <h2>Information</h2>
-                <p>
-                    This microscope can only be used after receiving an appropriate training. No yet trained? Trainings are generally 
-                    organized last Fridays of the month (provided 3 or 4 people attend). Request training <a href="#">here</a>.
-                </p>
-
-
-                <!-- adjust width -->
-                <img class="img-responsive" style="width: 60%" src="../img/lsm780.jpg" alt="lsm780">
-
-
-
-                <!-- hardware -->
-                <h2>Description of the hardware</h2>
-
-
-                <h3>1. Zeiss Automated inverted microscope</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Motorized X,Y stage, Automated filter turret, automated objective turret</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Minimal Fluorescence unit, LED or Metalhalide lamp</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Filtercubes:  3 filtercubes (optimized for 1/ GFP/FITC/Alexa488, 2/ RFP/dsRED/mCherry and 3/ for AMCA/DAPI)</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Top quality high NA, water immersion lenses objective (25 x /63 x) – Suitable both for Vis and IR applications</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>DIC optics</li>
+            <div class="card-block">
+                <ul>
+                    <li>November 6th: Mai Tai DS laser fully functional and aligned. </li>
+                    <li>October 27th: Xcite lamp repaired.</li>
+                    <li>October 3rd-15th 2017: Mai Tai DS laser disconnected and shipped for repair. All single photon work is still possible.</li>
+                    <li>June: due to a power outage, Mai Tai DS is unreliable in starting up and maintaining constant power.</li>
+                    <li>May 5th 2017: System fully operational, Mai Tai DS included.</li>
                 </ul>
-
-
-                <h3>2. Visible light lasers</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Argon laser (458, 488 & 514 nm), solid state lasers: 405, 561, 633 nm</li>
-                </ul>
-
-
-                <h3>3. IR laser for NLO Microscopy</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Mai Tai Deep See Femtosecond Ti:Sa laser, tunable over 680 to 1050 nm</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Short pulses (< 120fs) over entire wavelength range</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Predispersion compensation</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Custom made polarisation control (to be discussed with <a href="#">Pieter Vanden Berghe</a>)</li>
-                </ul>
-
-                <h3>4. Scanning unit:</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>This galvoscanning unit allows capturing at all ViS and IR wavelengths available.</li>
-                </ul>
-
-                <h3>5. Detection</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>32 highly sensitive GaASP detector array in the descanned beampath, + 2 flanking PMT's for blue and red. </li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Double BIG GaASP detector in a nondescanned beampath both in epi. </li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>Double BIG GaASP detector in a nondescanned beampath in forward (use: to be discussed with <a href="#">Pieter Vanden Berghe</a> or <a href="#">Valérie Van Steenbergen</a>)</li>
-                </ul>
-
-                <h3>6. Detection</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>- 0.55 NA air condensor or high NA air condensor (NA 0.8) for recording forward SH signals</li>
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>g. PC and Zen2012 to control                
-                        <ol>
-                            <li>Recording and analysis soft- and hardware, to control scanning, timelapse imaging, triggering, …  </li>
-                            <li>PC:  RAM 32 Gb, high end multi core processor, W7 64bit, 30 inch screen</li>
-                        </ol>
-                    </li>
-                </ul>
-
-                <h3>7. Communication & triggering</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>I/O TTL communication ports for triggering of external devices like patch clamp amplifiers, stimulators, perfusion equipment should be available… </li>
-                </ul>
-
-                <h3>8. Live cell imaging</h3>
-                <ul class="list-group">
-                    <li class="list-group-item"><span class="fa fa-arrow-right"></span>CO2 incubator + heater that fits or covers the microscope stage. The incubator should be black to avoid influence of ambient light during the experiment.</li>
-                </ul>
-
-
-                <!-- end of hardware -->
-                <h2>Charges</h2>
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <td>Description</td>
-                            <td>Price/h (€)</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Microscope use with 405-Ar-561-633 nm lasers </td>
-                            <td>25</td>
-                        </tr>
-                        <tr>
-                            <td>Microscope use with MaiTai DS laser</td>
-                            <td>35</td>
-                        </tr>
-                        <tr>
-                            <td>Use of the MaiTai laser in combination with NDD, Lambda or forward detection</td>
-                            <td>To be discussed first with Pieter Vanden Berghe</td>
-                        </tr>
-                        <tr>
-                            <td>Overnight experiment</td>
-                            <td>To be discussed first with Pieter Vanden Berghe</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p>Person responsible: <a href="https://www.kuleuven.be/wieiswie/nl/person/00075013" target="new"> Valérie Van Steenbergen</a></p>
-
-                <h2>Make a booking</h2>
-                <p>Please click on the button below to be redirected to the booking application.</p>
-                <a role="button" class="btn btn-info">Place a booking</a>
-                <div style="padding-bottom: 10em;"></div>
-
             </div>
         </div>
-    </body>
+        <br>
+        <h2>Information</h2>
+        <p>
+            This microscope can only be used after receiving an appropriate training. No yet trained? Trainings are generally organized last Fridays of the month (provided 3 or 4 people attend). Request training <a href="#">here</a>.
+        </p>
+        <br>
+        <img class="img-responsive" style="width: 60%" src="../img/lsm780.jpg" alt="lsm780">
+        <br>
+        <br>
+
+
+        <!-- hardware -->
+        <h2>Description of the hardware</h2>
+<br>
+<br>
+        <h3>1. Zeiss Automated inverted microscope</h3>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Motorized X,Y stage, Automated filter turret, automated objective turret</li>
+            <li class="list-group-item">Minimal Fluorescence unit, LED or Metalhalide lamp</li>
+            <li class="list-group-item">Filtercubes: 3 filtercubes (optimized for 1/ GFP/FITC/Alexa488, 2/ RFP/dsRED/mCherry and 3/ for AMCA/DAPI)</li>
+            <li class="list-group-item">Top quality high NA, water immersion lenses objective (25 x /63 x) – Suitable both for Vis and IR applications</li>
+            <li class="list-group-item">DIC optics</li>
+        </ul>
+<br>
+        <br>
+        <h3>2. Visible light lasers</h3>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Argon laser (458, 488 &amp; 514 nm), solid state lasers: 405, 561, 633 nm</li>
+        </ul>
+<br>
+<br>
+        <h3>3. IR laser for NLO Microscopy</h3>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">Mai Tai Deep See Femtosecond Ti:Sa laser, tunable over 680 to 1050 nm</li>
+            <li class="list-group-item">Short pulses (
+                &lt; 120fs) over entire wavelength range</li>
+                    <li class="list-group-item">Predispersion compensation</li>
+                    <li class="list-group-item">Custom made polarisation control (to be discussed with <a href="#">Pieter Vanden Berghe</a>)</li>
+        </ul>
+<br>
+       <br>
+        <h3>4. Scanning unit:</h3>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">This galvoscanning unit allows capturing at all ViS and IR wavelengths available.</li>
+        </ul>
+<br>
+       <br>
+        <h3>5. Detection</h3>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">32 highly sensitive GaASP detector array in the descanned beampath, + 2 flanking PMT's for blue and red. </li>
+            <li class="list-group-item">Double BIG GaASP detector in a nondescanned beampath both in epi. </li>
+            <li class="list-group-item">Double BIG GaASP detector in a nondescanned beampath in forward (use: to be discussed with <a href="#">Pieter Vanden Berghe</a> or <a href="#">Valérie Van Steenbergen</a>)</li>
+        </ul>
+<br>
+       <br>
+        <h3>6. Detection</h3>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">- 0.55 NA air condensor or high NA air condensor (NA 0.8) for recording forward SH signals</li>
+            <li class="list-group-item">g. PC and Zen2012 to control
+                <ol>
+                    <li>Recording and analysis soft- and hardware, to control scanning, timelapse imaging, triggering, … </li>
+                    <li>PC: RAM 32 Gb, high end multi core processor, W7 64bit, 30 inch screen</li>
+                </ol>
+            </li>
+        </ul>
+<br>
+       <br>
+        <h3>7. Communication &amp; triggering</h3>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">I/O TTL communication ports for triggering of external devices like patch clamp amplifiers, stimulators, perfusion equipment should be available… </li>
+        </ul>
+<br>
+       <br>
+        <h3>8. Live cell imaging</h3>
+        <br>
+        <ul class="list-group">
+            <li class="list-group-item">CO2 incubator + heater that fits or covers the microscope stage. The incubator should be black to avoid influence of ambient light during the experiment.</li>
+        </ul>
+<br>
+        <br>
+        <!-- end of hardware -->
+        <h2>Charges</h2>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <td>Description</td>
+                    <td>Price/h (€)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Microscope use with 405-Ar-561-633 nm lasers </td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Microscope use with MaiTai DS laser</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Use of the MaiTai laser in combination with NDD, Lambda or forward detection</td>
+                    <td>To be discussed first with Pieter Vanden Berghe</td>
+                </tr>
+                <tr>
+                    <td>Overnight experiment</td>
+                    <td>To be discussed first with Pieter Vanden Berghe</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Person responsible: <a href="https://www.kuleuven.be/wieiswie/nl/person/00075013" target="new"> Valérie Van Steenbergen</a></p>
+<br>
+       <br>
+        <h2>Make a booking</h2>
+        <br>
+        <p>Please click on the button below to be redirected to the booking application.</p>
+        <button type="button" class="btn btn-primary">Place a booking</button>
+        <br>
+        <br>
+
+    </div>
+</body>
 
 </html>
